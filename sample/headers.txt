@@ -1,0 +1,6 @@
+List-ID|Example ID <Example.DomainName.com>
+List-Post|NO
+List-Help|<mailto:%%LIST_ID%%-request@%%DOMAIN%%.com?subject=details>
+List-Subscribe|<mailto:%%LIST_ID%%-request@%%DOMAIN%%.com?subject=subscribe>
+List-Unsubscribe|<mailto:%%LIST_ID%%-request@%%DOMAIN%%.com?subject=unsubscribe>
+List-Owner|<mailto:%%EMAIL%%>

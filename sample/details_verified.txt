@@ -1,0 +1,8 @@
+Good time-of-the-day, person.
+
+According to my records, you (%s) subscribed to the %%NAME%% newsletter on %s via %s and subsequently confirmed your subscription on %s.
+
+If you would like to unsubscribe, please send an email with the subject "unsubscribe" to <%%LIST_ID%%-request@%%DOMAIN%%.com>. If you cannot access the subscribed email, please contact the list owner for manual unsubscription.
+
+Regards,
+The %%NAME%% newsletter subscription management script.

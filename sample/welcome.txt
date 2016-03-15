@@ -1,0 +1,8 @@
+Welcome to the %%NAME%% newsletter.
+
+To unsubscribe from this mailing, please send a message with the subject "unsubscribe" to <%%LIST_ID%%-request@%%DOMAIN%%.com>.
+
+For a reminder how and when you subscribed to the newsletter, send a message with the subject "details" instead.
+
+Regards,
+The %%NAME%% newsletter subscription management script.

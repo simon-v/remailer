@@ -1,0 +1,10 @@
+Good time-of-the-day, person.
+
+According to my records, you (%s) subscribed to the %%NAME%% newsletter on %s via %s, however your subscription was disabled due to bounced emails.
+
+If you would like to re-activate your subscription, please go through the subscription procedure again (that is, send an email with the subject "subscribe" to <%%LIST_ID%%-request@%%DOMAIN%%.com>).
+
+To permanently remove your email from my records, please send an email with the subject "unsubscribe" instead.
+
+Regards,
+The %%NAME%% newsletter subscription management script.

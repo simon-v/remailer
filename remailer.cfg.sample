@@ -1,0 +1,7 @@
+backend=sendmail OR smtp OR dummy
+server=SMTP-SERVER
+login=SMTP-LOGIN
+passwd=SMTP-PASSWORD
+allowed_senders=COMMA_SEPARATED_EMAIL_LIST
+list_owner=FROM-STRING
+gnupg_file=/home/USERNAME/.gnupg/pubring.gpg

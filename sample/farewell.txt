@@ -1,0 +1,8 @@
+Good time-of-the-day, person.
+
+As per your request, your email (%s) was unsubscribed from the %%NAME%% newsletter.
+
+If at any point you would like to re-activate your subscription, you will need to go through the subscription procedure again (that is, to send an email with the subject "subscribe" to <%%LIST_ID%%-request@%%DOMAIN%%.com>).
+
+Regards,
+The %%NAME%% newsletter subscription management script.

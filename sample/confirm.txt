@@ -1,0 +1,10 @@
+Good time-of-the-day, person.
+
+Please confirm your subscription to the %%NAME%% newsletter by replying to this email (that is, pressing "Reply" and immediately pressing "Send").
+
+To remind you, the subscription request was made for %s on %s via %s.
+
+If you do not recall making such a request, you may ignore this email, with no consequences.
+
+Regards,
+The %%NAME%% newsletter subscription management script.
