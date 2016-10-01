@@ -46,6 +46,16 @@ except ImportError:
 # Those are local scripts put in the same directory
 import clearmime
 
+# Abort the execution leaving sending the list owner a backtrace
+def panic(error):
+	logging.error('Panicking: %s' % error)
+	debug_file = '%s.eml' % time.time()
+	df = open(debug_file, 'w')
+	df.write(raw_email)
+	df.close()
+	logging.error('Offending message saved to "%s"' % debug_file)
+	sys.exit()
+
 # Configuration file parsing and validation
 # The simplicity of this implementation does not warrant employing a ConfigParser
 conf = {}
@@ -62,16 +72,6 @@ except:
 for s in ['backend', 'server', 'login', 'passwd', 'allowed_senders', 'list_owner', 'gnupg_file']:
 	if s not in conf:
 		panic('`%s` key is missing from configuration file' % s)
-
-# Abort the execution leaving sending the list owner a backtrace
-def panic(error):
-	logging.error('Panicking: %s' % error)
-	debug_file = '%s.eml' % time.time()
-	df = open(debug_file, 'w')
-	df.write(raw_email)
-	df.close()
-	logging.error('Offending message saved to "%s"' % debug_file)
-	sys.exit()
 
 # Send one or more pre-constructed emails
 def sendmail(message_list):
