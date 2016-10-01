@@ -98,7 +98,7 @@ def sendmail(message_list):
 	elif conf['backend'] == 'sendmail':
 		for message in message_list:
 			try:
-				server = subprocess.Popen(['/usr/sbin/sendmail','-i', '-t'], stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+				server = subprocess.Popen(['/usr/sbin/sendmail','-i', message['To']], stdin=subprocess.PIPE, stderr=subprocess.PIPE)
 				_, stderr = server.communicate(message.as_string())
 				if stderr != '':
 					logging.error('Sending to %s failed' % message['To'])
@@ -220,8 +220,8 @@ else:
 		logging.info('POST mode on "%s"' % list_name)
 	for item in files:
 		files[item] = files[item] % list_name
-	# Delete original message recipients
-	for header in ['To', 'CC', 'BCC']:
+	# Delete original message recipients and bounce-to headers
+	for header in ['To', 'CC', 'BCC', 'Resent-To', 'Resent-From', 'Resent-Date', 'Resent-Message-ID']:
 		if not message[header] == None:
 			del message[header]
 
