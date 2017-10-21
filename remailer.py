@@ -1,7 +1,8 @@
 #!/usr/bin/python2 -B
-# Import the public GPG key for the persons allowed to post into the keyring on the server
-# Add the From: strings for the persons allowed to post to the allowed sender list
-# Create an exim filter that pipes emails coming to your list into this script
+# remailer - A PGP-enforcing newsletter implementation
+# Author: Simon Volpert <simon@simonvolpert.com>
+# This program is free software, released under the Apache License, Version 2.0. See the LICENSE file for more information
+# Consult the README file for usage instructions and other helpful hints
 
 # -----===== CONFIGURATION =====-----
 files = {
