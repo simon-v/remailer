@@ -1,6 +1,7 @@
 #!/usr/bin/python2 -B
 # remailer - A PGP-enforcing newsletter implementation
 # Author: Simon Volpert <simon@simonvolpert.com>
+# Project page: https://github.com/simon-v/remailer/
 # This program is free software, released under the Apache License, Version 2.0. See the LICENSE file for more information
 # Consult the README file for usage instructions and other helpful hints
 
