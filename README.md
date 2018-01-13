@@ -63,4 +63,4 @@ This program is free software, released under the Apache License, Version 2.0. S
 
 The program's canonical project page resides at https://github.com/simon-v/remailer/
 
-I gratefully accept appreciation for my work in material form at [bitcoincash:qr9mj4r9sq3urkjl6hhspeyjj62l3k3mzckaqq0kj8](bitcoincash:qr9mj4r9sq3urkjl6hhspeyjj62l3k3mzckaqq0kj8).
+I gratefully accept appreciation for my work in material form at __[bitcoincash:qr9mj4r9sq3urkjl6hhspeyjj62l3k3mzckaqq0kj8](bitcoincash:qr9mj4r9sq3urkjl6hhspeyjj62l3k3mzckaqq0kj8)__.
