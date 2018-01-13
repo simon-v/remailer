@@ -15,7 +15,7 @@ To use it on your webserver, you need to do the following:
   4. Add the `From:` string of the person allowed to post to the `list_owner` key in the configuration file;
   5. Create a mail filter which pipes incoming messages for the newsletter to the `remailer.py` script. Examples for EXIM:
 
-__On private hosting, with a dedicated `remailer` user:__
+### On private hosting, with a dedicated `remailer` user
 
 In `/etc/aliases`:
 
@@ -29,7 +29,7 @@ In `/home/remailer/.forward` (or equivalent):
         pipe "/path/to/remailer.py"
     endif
 
-__On private hosting, without a dedicated `remailer` user:__
+### On private hosting, without a dedicated `remailer` user
 
 In `/etc/aliases`:
 
@@ -38,7 +38,7 @@ In `/etc/aliases`:
 
 Since it's not immediately obvious which user ends up running that script, make sure to test your configuration to get your file permissions right.
 
-__For a shared hosting environment:__
+### For a shared hosting environment
 
 In your `.forward`:
 
@@ -47,7 +47,7 @@ In your `.forward`:
         pipe "/path/to/remailer.py"
     endif
 
-__User management:__
+### User management
 
 To subscribe to the newsletter, have the user send an email with the subject "subscribe" to the list-request address. They will receive a verification email to which they will need to reply.
 
@@ -57,7 +57,7 @@ To see the details of their subscription, have the user send an email with the s
 
 Invalid emails (those with unrecognized commands or from unauthorized senders) are saved in the script's working directory for future examination.
 
-***
+### Other Notes
 
 This program is free software, released under the Apache License, Version 2.0. See the LICENSE file for more information.
 
